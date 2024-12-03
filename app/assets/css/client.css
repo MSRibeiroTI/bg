@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-orange: #FA4C0F;
+    --secondary-orange: #F94D0E;
+    background-image: url("login_back.jpg");
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    color: var(--main-orange);
+    line-height: 1.5;
+}
+
+.infop{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+
+}
+.proinfo{
+width: 100rem;
+height: 200px;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-black);
+    border-bottom: 0.3rem solid var(--main-orange);
+    width: 100%;
+    height: 10rem;
+}
+
+main {
+    background-color: var(--main-black);
+    width: 100%;
+    height: calc(100vh - 10rem);
+}
+
+.title {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+.title h1 {
+    font-size: 4rem;
+    border-bottom: 0.3rem solid var(--main-orange);
+}
+.subtitle{
+    font-size: 2rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    padding-left: 6rem;
+}
+
+.grid {
+    margin: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 4rem;
+}
+
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border: 0.3rem solid var(--main-orange);
+    border-radius: 5rem;
+    background-color: var(--main-black);
+    gap: 1rem;
+}
+
+.grid-item a img {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-bottom: 0.5rem;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(78%) saturate(6047%) hue-rotate(353deg) brightness(97%) contrast(102%);
+}
+
+.grid-item a {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-orange);
+    font-size: 2rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.grid-item a::after {
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 10%;
+    width: 0;
+    height: 0.3rem;
+    background: var(--main-black);
+    transition: all 300ms ease-in-out;
+}
+
+.grid-item:hover a::after {
+    width: 20%;
+    left: 40%;
+}
+
+.grid-item:hover {
+    border: 0.3rem solid #000;
+    background-color: var(--main-orange);
+}
+
+.grid-item:hover a {
+    color: var(--main-black);
+}
+
+.grid-item:hover a img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(2402%) hue-rotate(327deg) brightness(103%) contrast(79%);
+}
+
+.grid-item2 {
+    width: 50rem;
+    display: flow-root;
+    margin-left: auto;
+    margin-right: 20rem;
+    justify-content: right;
+    border: 0.3rem solid var(--main-orange);
+    border-radius: 5rem;
+    background-color: var(--main-black);
+    gap: 4rem;
+}
+
+.grid-item2 a img {
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-bottom: 0.5rem;
+    filter: brightness(0) saturate(100%) invert(57%) sepia(78%) saturate(6047%) hue-rotate(353deg) brightness(97%) contrast(102%);
+}
+
+.grid-item2 a {
+    width: 100%;
+    height: 100%;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-orange);
+    font-size: 2rem;
+    text-decoration: none;
+    position: relative;
+}
+
+.grid-item2 a::after {
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 10%;
+    width: 0;
+    height: 0.3rem;
+    background: var(--main-black);
+    transition: all 300ms ease-in-out;
+}
+
+.grid-item2:hover a::after {
+    width: 20%;
+    left: 40%;
+}
+
+.grid-item2:hover {
+    border: 0.3rem solid #000;
+    background-color: var(--main-orange);
+}
+
+.grid-item2:hover a {
+    color: var(--main-black);
+}
+
+.grid-item2:hover a img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(2%) saturate(2402%) hue-rotate(327deg) brightness(103%) contrast(79%);
+}
+
+.back {
+    width: 100%;
+    height: 8rem;
+    margin-top: 10rem;
+    padding-left: 3rem;
+}

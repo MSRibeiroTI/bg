@@ -1,0 +1,12 @@
+  footer {
+      background-color: #000000;
+      color: #796565;
+      padding: 10px;
+      text-align: center;
+      clear: both;
+  }
+
+  footer a {
+      color: #fff;
+      text-decoration: none;
+  }
